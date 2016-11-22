@@ -9,4 +9,5 @@
     <string name="username_hint">Enter Username</string>
     <string name="password_hint">Enter Password</string>
     <string name="login_string">Login </string>
+    <string name="signup_string">Signup </string>
 </resources>
