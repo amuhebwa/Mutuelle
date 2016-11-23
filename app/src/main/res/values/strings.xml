@@ -10,4 +10,8 @@
     <string name="password_hint">Enter Password</string>
     <string name="login_string">Login </string>
     <string name="signup_string">Signup </string>
+    <string name="nationalid_hint">Enter National ID Number</string>
+    <string name="card_picture">Mutuelle Card Picture</string>
+    <string name="lastname">Enter Last Name</string>
+    <string name="firstname">Enter First Name</string>
 </resources>

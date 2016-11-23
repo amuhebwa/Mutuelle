@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/signup_activity"
     android:layout_width="match_parent"
@@ -10,4 +10,135 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="edu.cmu.mutuelle.mutuelle.SignUpActivity">
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- <TextView
+             android:id="@+id/banner"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             android:gravity="center_horizontal"
+             android:text="@string/app_title"
+             android:textSize="20sp"
+             android:textStyle="bold" />-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/firstnameInput"
+            android:layout_width="@dimen/login_textsizes"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/firstname"
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lastnameInput"
+            android:layout_width="@dimen/login_textsizes"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstnameInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/lastname"
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameInput"
+            android:layout_width="@dimen/login_textsizes"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastnameInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/username_hint"
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordInpt"
+            android:layout_width="@dimen/login_textsizes"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nationalIdInpt"
+            android:layout_width="@dimen/login_textsizes"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordInpt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/nationalId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/nationalid_hint"
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/takePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nationalIdInpt"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_menu_camera" />
+
+        <TextView
+            android:id="@+id/pictureDescriotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/signupButton"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/takePicture"
+            android:text="@string/card_picture"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="@dimen/login_textsizes"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/takePicture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/signup_string"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</ScrollView>
