@@ -4,19 +4,11 @@ package edu.cmu.mutuelle.mutuelle.models;
 public class User {
     private String firstName;
     private String lastName;
-    private String userName;
-    private String password;
     private String nationalId;
     private String cardPicturePath;
 
     public User()
     {
-    }
-
-    public User(String newUserName, String newPassword)
-    {
-        userName = newUserName;
-        password = newPassword;
     }
 
     public String getFirstName()
@@ -26,7 +18,7 @@ public class User {
 
     public void setFirstName(String newFirstName)
     {
-        this.firstName = newFirstName;
+        firstName = newFirstName;
     }
 
     public String getLastName()
@@ -36,27 +28,7 @@ public class User {
 
     public void setLastName(String newLastName)
     {
-        this.lastName = newLastName;
-    }
-
-    public String getUserName()
-    {
-        return userName;
-    }
-
-    public void setUserName(String newUserName)
-    {
-        this.userName = newUserName;
-    }
-
-    public String getPassword()
-    {
-        return password;
-    }
-
-    public void setPassword(String newPassword)
-    {
-        this.password = newPassword;
+        lastName = newLastName;
     }
 
     public String getNationalId()
@@ -66,7 +38,7 @@ public class User {
 
     public void setNationalId(String newNationalId)
     {
-        this.nationalId = newNationalId;
+        nationalId = newNationalId;
     }
 
     public String getCardPicturePath()
@@ -76,7 +48,7 @@ public class User {
 
     public void setCardPicturePath(String newCardPicturePath)
     {
-        this.cardPicturePath = newCardPicturePath;
+        cardPicturePath = newCardPicturePath;
     }
 
     public boolean isUserLoggedIn()
