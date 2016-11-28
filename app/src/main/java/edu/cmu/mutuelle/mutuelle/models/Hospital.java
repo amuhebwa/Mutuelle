@@ -17,12 +17,12 @@ public class Hospital
         hospitalId = hosID;
     }
 
-    public String getHospitalName
+    public String getHospitalName()
     {
         return hospitalName;
     }
 
-    public String setHospitalName(String hosName)
+    public void setHospitalName(String hosName)
     {
         hospitalName = hosName;
     }
@@ -35,7 +35,7 @@ public class Hospital
         tinNumber = tinNo;
     }
 
-    public long getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 
@@ -43,7 +43,7 @@ public class Hospital
         latitude = lat;
     }
 
-    public long getLongitude() {
+    public double getLongitude() {
         return latitude;
     }
 
