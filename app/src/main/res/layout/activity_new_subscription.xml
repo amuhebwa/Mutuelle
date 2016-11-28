@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_subscription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.cmu.mutuelle.mutuelle.NewSubscriptionActivity">
+
+    <TextView
+        android:text="Full Name: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/fullName" />
+
+    <TextView
+        android:text="Date of Birth: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateOfBirth"
+        android:layout_below="@+id/fullName"
+        android:layout_alignStart="@+id/fullName"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:text="National ID: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nationalId"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/dateOfBirth"
+        android:layout_alignStart="@+id/dateOfBirth" />
+
+    <TextView
+        android:text="@string/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/nationalId"
+        android:layout_alignStart="@+id/nationalId" />
+
+    <TextView
+        android:text="@string/previous_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/previousPlanLabel"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/gender"
+        android:layout_alignStart="@+id/nationalId" />
+
+    <TextView
+        android:text="@string/choose_subscription_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/previousPlanLabel"
+        android:layout_alignStart="@+id/gender"
+        android:id="@+id/textView2" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/subscriptionPlanList" />
+
+    <Button
+        android:text="@string/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subscriptionPlanList"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="66dp"
+        android:id="@+id/subscribeButton"
+        android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>
