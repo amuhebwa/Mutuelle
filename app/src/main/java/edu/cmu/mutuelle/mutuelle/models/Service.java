@@ -28,11 +28,11 @@ public class Service
         cost = costs;
     }
 
-    public String getDescription(String) {
+    public String getDescription() {
         return description;
     }
 
     public String toString() {
-
+        return "";
     }
 }
