@@ -27,4 +27,7 @@
     <string name="mtn_mobile_money">MTN Mobile Money</string>
     <string name="tigo_cash">Tigo Cash</string>
     <string name="subscribe">Subscribe</string>
+    <string name="nearby_activity_label">Nearby Hospitals</string>
+    <string name="new_subscription_activity_label">New Subscription</string>
+    <string name="subscription_payment">New Subscription | Payment</string>
 </resources>
