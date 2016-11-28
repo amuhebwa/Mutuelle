@@ -1,8 +1,8 @@
 package edu.cmu.mutuelle.mutuelle.models;
 
-import java.util.Date;
+import android.media.Image;
 
-<<<<<<< HEAD
+import java.util.Date;
 
 public class Checkin
 {
@@ -64,7 +64,7 @@ public class Checkin
         hospitalID = hosID;
     }
 
-    public image generateQrCode (long userNationalID) {
+    public Image generateQrCode (long userNationalID) {
         Image image = null;
         return image;
     }
@@ -77,7 +77,7 @@ public class Checkin
     }
 
     public String toString() {
-        
+       return  "";
     }
 
 }
