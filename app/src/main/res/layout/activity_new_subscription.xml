@@ -11,7 +11,7 @@
     tools:context="edu.cmu.mutuelle.mutuelle.NewSubscriptionActivity">
 
     <TextView
-        android:text="Full Name: "
+        android:text="@string/full_name_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -21,7 +21,7 @@
         android:id="@+id/fullName" />
 
     <TextView
-        android:text="Date of Birth: "
+        android:text="@string/date_of_birth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/dateOfBirth"
@@ -30,7 +30,7 @@
         android:layout_marginTop="16dp" />
 
     <TextView
-        android:text="National ID: "
+        android:text="@string/national_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/nationalId"
@@ -81,7 +81,7 @@
         android:layout_alignStart="@+id/textView2"
         android:layout_marginTop="66dp"
         android:id="@+id/subscribeButton"
-        android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
+        android:background="@android:color/holo_blue_dark"
         android:textColor="#ffffff"/>
 
 </RelativeLayout>
