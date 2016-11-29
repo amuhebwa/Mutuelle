@@ -16,7 +16,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="22dp"
         android:layout_marginTop="14dp"
         android:id="@+id/fullName" />
 
@@ -82,6 +81,7 @@
         android:layout_marginTop="66dp"
         android:id="@+id/subscribeButton"
         android:background="@android:color/holo_blue_dark"
-        android:textColor="#ffffff"/>
+        android:textColor="#ffffff"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
