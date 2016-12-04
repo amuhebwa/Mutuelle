@@ -44,9 +44,9 @@ public class Subscription extends Fragment {
 
     public void addDummyData(Spinner selectPlanSpinner) {
         List<String> dummyPlanData = new ArrayList<>();
-        dummyPlanData.add("1 year/5000");
-        dummyPlanData.add("2 years/8000");
-        dummyPlanData.add("3 years/14000");
+        dummyPlanData.add("1 year/10000");
+        dummyPlanData.add("2 years/18000");
+        dummyPlanData.add("3 years/27000");
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_spinner_item, dummyPlanData);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

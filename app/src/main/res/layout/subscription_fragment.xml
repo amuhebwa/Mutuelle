@@ -13,58 +13,6 @@
         android:layout_height="wrap_content">
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/firstnameInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp">
-
-            <EditText
-                android:id="@+id/firstname"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="@string/firstname"
-                android:textSize="16sp" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/lastnameInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/firstnameInput"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp">
-
-            <EditText
-                android:id="@+id/lastname"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="@string/lastname"
-                android:textSize="16sp" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/dateOfBirthInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/lastnameInput"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp">
-
-            <EditText
-                android:id="@+id/dateOfBirth"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Ente Date Of Birth"
-                android:inputType="date"
-                android:textSize="16sp" />
-
-        </android.support.design.widget.TextInputLayout>
-
-
-        <android.support.design.widget.TextInputLayout
             android:id="@+id/nationalIdInpt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,9 +32,9 @@
             android:id="@+id/selectPlan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SELECT PLAN"
             android:layout_below="@+id/nationalIdInpt"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"
+            android:text="SELECT PLAN" />
 
         <Spinner
             android:id="@+id/selectplanSpinner"
