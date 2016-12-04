@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.cmu.mutuelle.mutuelle">
 
+    <provider
+        android:name=".util.MutuelleContentProvider"
+        android:authorities="edu.cmu.mutuelle.mutuelle.util.MutuelleContentProvider"></provider>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,37 +16,35 @@
             android:name=".OverViewActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".LoginActivity"
-            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
             android:label="@string/app_name"
-            >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpActivity"
+        <activity
+            android:name=".SignUpActivity"
             android:label="Mutuelle | Signup"
             android:parentActivityName=".LoginActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".NearbyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NearbyActivity"
             android:label="@string/nearby_activity_label"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".NewSubscriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewSubscriptionActivity"
             android:label="@string/new_subscription_activity_label"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentActivity"
             android:label="@string/subscription_payment"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
+        <activity android:name=".PaymentDetails"></activity>
     </application>
-
-    <provider
-        android:authorities="edu.cmu.mutuelle.mutuelle.util.MutuelleContentProvider"
-        android:name=".util.MutuelleContentProvider" >
-    </provider>
 
 </manifest>

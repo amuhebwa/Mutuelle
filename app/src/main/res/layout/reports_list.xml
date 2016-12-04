@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/visited_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="14-Feb-2016"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/checkedInHospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visited_date"
+        android:layout_marginTop="10dp"
+        android:text="King Faisal Hospital" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkedInHospital"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp">
+        <!--<ImageView
+            android:id="@+id/more_data_dots"
+            android:src="@drawable/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+        <View
+            android:id="@+id/more_data_dots"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginEnd="10dp" />
+
+        <View
+            android:id="@+id/dots2"
+            android:layout_width="2dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/more_data_dots"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginEnd="10dp" />
+
+        <View
+            android:id="@+id/dots3"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/dots2"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/checkedInTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/more_data_dots"
+            android:text="3:45pm"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

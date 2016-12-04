@@ -2,12 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context="edu.cmu.mutuelle.mutuelle.fragment.Reports">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="reports" />
-
+    <ListView
+        android:id="@+id/reportsListView"
+        android:layout_width="fill_parent"
+        android:dividerHeight="3dp"
+        android:layout_height="fill_parent" />
 </FrameLayout>
