@@ -30,4 +30,9 @@
     <string name="nearby_activity_label">Nearby Hospitals</string>
     <string name="new_subscription_activity_label">New Subscription</string>
     <string name="subscription_payment">New Subscription | Payment</string>
+    <string name="new_subscription">New Subscription</string>
+    <string name="payment">Payment</string>
+    <string name="nearby_hospital">Nearby Hospital</string>
+    <string name="reports">Reports</string>
+    <string name="logout">Logout</string>
 </resources>

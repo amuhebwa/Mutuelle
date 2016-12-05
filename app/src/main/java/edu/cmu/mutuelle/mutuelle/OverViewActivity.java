@@ -80,7 +80,9 @@ public class OverViewActivity extends AppCompatActivity
                 fragment = new Payment();
                 break;
             case R.id.nav_nearbyHospital:
-                fragment = new NearbyHospital();
+                //fragment = new NearbyHospital();
+                // start a new  activity
+                startActivity(new Intent(this, NearbyActivity.class));
                 break;
             case R.id.nav_reports:
                 fragment = new Reports();

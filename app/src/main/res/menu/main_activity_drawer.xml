@@ -5,23 +5,23 @@
         <item
             android:id="@+id/nav_subscription"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Subscription" />
+            android:title="@string/new_subscription" />
         <item
             android:id="@+id/nav_payment"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Payment" />
+            android:title="@string/payment" />
         <item
             android:id="@+id/nav_nearbyHospital"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Nearby Hospital" />
+            android:title="@string/nearby_hospital" />
         <item
             android:id="@+id/nav_reports"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Reports" />
+            android:title="@string/reports" />
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Logout" />
+            android:title="@string/logout" />
     </group>
 
 </menu>
