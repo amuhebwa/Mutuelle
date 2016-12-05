@@ -1,5 +1,6 @@
 package edu.cmu.mutuelle.mutuelle;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -71,7 +72,9 @@ public class OverViewActivity extends AppCompatActivity
         switch (itemId)
         {
             case R.id.nav_subscription:
-                fragment = new Subscription();
+                // fragment = new Subscription();
+                // start a new  activity
+                startActivity(new Intent(this, NewSubscriptionActivity.class));
                 break;
             case  R.id.nav_payment:
                 fragment = new Payment();

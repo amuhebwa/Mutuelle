@@ -4,7 +4,9 @@
 
     <provider
         android:name=".util.MutuelleContentProvider"
-        android:authorities="edu.cmu.mutuelle.mutuelle.util.MutuelleContentProvider"></provider>
+        android:authorities="edu.cmu.mutuelle.mutuelle.util.MutuelleContentProvider">
+
+    </provider>
 
     <application
         android:allowBackup="true"
