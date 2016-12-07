@@ -35,4 +35,9 @@
     <string name="nearby_hospital">Nearby Hospital</string>
     <string name="reports">Reports</string>
     <string name="logout">Logout</string>
+    <string name="subscription_type">Subscription Type:</string>
+    <string name="account_number">Account Number</string>
+    <string name="valid_until">Valid Until</string>
+    <string name="login_label">Mutuelle Login</string>
+    <string name="signup_label">Mutuelle | Signup</string>
 </resources>
