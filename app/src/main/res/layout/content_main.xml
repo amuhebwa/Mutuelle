@@ -27,7 +27,7 @@
         android:layout_marginTop="30dp">
 
         <LinearLayout
-            android:id="@+id/layout1"
+            android:id="@+id/myPlan"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:orientation="vertical">
@@ -47,10 +47,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/layout2"
+            android:id="@+id/payment"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_toEndOf="@+id/layout1"
+            android:layout_toEndOf="@+id/myPlan"
             android:orientation="vertical">
 
             <ImageButton
@@ -68,10 +68,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/layout3"
+            android:id="@+id/reports"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_below="@+id/layout2"
+            android:layout_below="@+id/payment"
             android:orientation="vertical">
 
             <ImageButton
@@ -89,11 +89,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/layout4"
+            android:id="@+id/addDependent"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_below="@+id/layout2"
-            android:layout_toEndOf="@+id/layout3"
+            android:layout_below="@+id/payment"
+            android:layout_toEndOf="@+id/reports"
             android:orientation="vertical">
 
             <ImageButton
@@ -110,7 +110,7 @@
                 android:textStyle="bold" />
         </LinearLayout>
         <Button
-            android:layout_below="@+id/layout4"
+            android:layout_below="@+id/addDependent"
             android:id="@+id/checkinButton"
             android:layout_width="@dimen/login_textsizes"
             android:layout_height="wrap_content"
