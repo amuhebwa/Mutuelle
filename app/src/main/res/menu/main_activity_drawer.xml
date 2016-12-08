@@ -11,6 +11,11 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/payment" />
         <item
+            android:id="@+id/nav_add_dependent"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Add dependent"
+           />
+        <item
             android:id="@+id/nav_nearbyHospital"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/nearby_hospital" />

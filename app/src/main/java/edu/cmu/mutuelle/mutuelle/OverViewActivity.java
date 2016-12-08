@@ -84,6 +84,9 @@ public class OverViewActivity extends AppCompatActivity
                 // start a new  activity
                 startActivity(new Intent(this, NearbyActivity.class));
                 break;
+            case R.id.nav_add_dependent:
+                startActivity(new Intent(this, AddDependentActivity.class));
+                break;
             case R.id.nav_reports:
                 fragment = new Reports();
                 break;
