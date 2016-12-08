@@ -40,4 +40,15 @@
     <string name="valid_until">Valid Until</string>
     <string name="login_label">Mutuelle Login</string>
     <string name="signup_label">Mutuelle | Signup</string>
+    <string name="add_dependent_label">Add Dependent</string>
+    <string name="birthday">Birthday</string>
+    <string name="female">Female</string>
+    <string name="first_name">First Name</string>
+    <string name="genderLabel">Gender</string>
+    <string name="last_name">Last Name</string>
+    <string name="male">Male</string>
+    <string name="name">Name</string>
+    <string name="nameLast">Name</string>
+    <string name="ok">OK</string>
+    <string name="take_photo">Take Photo</string>
 </resources>
