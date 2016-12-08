@@ -12,14 +12,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 import edu.cmu.mutuelle.mutuelle.fragment.NearbyHospital;
 import edu.cmu.mutuelle.mutuelle.fragment.Payment;
 import edu.cmu.mutuelle.mutuelle.fragment.Reports;
 import edu.cmu.mutuelle.mutuelle.fragment.Subscription;
+import edu.cmu.mutuelle.mutuelle.util.CheckInActivity;
 
 public class OverViewActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    //Overview elements
+    private LinearLayout myPlan, payment, reports, addDependent;
+    private Button checkinButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +36,48 @@ public class OverViewActivity extends AppCompatActivity
         setContentView(R.layout.overview_activity);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //Initialize Overview elements
+        myPlan = (LinearLayout) findViewById(R.id.myPlan);
+        payment = (LinearLayout) findViewById(R.id.payment);
+        reports = (LinearLayout) findViewById(R.id.reports);
+        addDependent = (LinearLayout) findViewById(R.id.reports);
+        checkinButton = (Button) findViewById(R.id.checkinButton);
+
+        //add on click listeners
+        myPlan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        payment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        reports.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            }
+        });
+
+        addDependent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(OverViewActivity.this, AddDependentActivity.class));
+            }
+        });
+
+        checkinButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(OverViewActivity.this, CheckInActivity.class));
+            }
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
