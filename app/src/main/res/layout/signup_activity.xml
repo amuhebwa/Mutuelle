@@ -70,7 +70,7 @@
                 android:inputType="date"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Date of Birth"
+                android:hint="@string/date_of_birth_yyy_mm_dd"
                 android:textSize="16sp" />
 
         </android.support.design.widget.TextInputLayout>
@@ -128,7 +128,7 @@
             android:layout_marginLeft="10dp"
             android:layout_toEndOf="@+id/takePicture"
             android:text="@string/card_picture"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/signupButton"
