@@ -75,29 +75,11 @@
 
         </android.support.design.widget.TextInputLayout>
 
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/usernameInput"
-            android:layout_width="@dimen/login_textsizes"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/dateOfBirthInput"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp">
-
-            <EditText
-                android:id="@+id/username"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="@string/username_hint"
-                android:textSize="16sp" />
-
-        </android.support.design.widget.TextInputLayout>
-
         <android.support.design.widget.TextInputLayout
             android:id="@+id/passwordInpt"
             android:layout_width="@dimen/login_textsizes"
             android:layout_height="wrap_content"
-            android:layout_below="@id/usernameInput"
+            android:layout_below="@id/dateOfBirthInput"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp">
 
