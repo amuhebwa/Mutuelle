@@ -33,6 +33,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/myPlanButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
@@ -54,15 +55,16 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/paymentButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
                 android:src="@drawable/payments" />
 
-            <TextView
++            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Payment"
+                android:text="@string/payments"
                 android:textSize="15sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -75,6 +77,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/reportsButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
@@ -83,7 +86,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Reports"
+                android:text="@string/reports_overview"
                 android:textSize="15sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -97,6 +100,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/addDependentButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
@@ -117,7 +121,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:background="@color/colorPrimary"
-            android:text="CHECKIN"
+            android:text="@string/checkin"
             android:textColor="@android:color/white" />
     </RelativeLayout>
 </RelativeLayout>
