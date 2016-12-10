@@ -3,6 +3,7 @@ package edu.cmu.mutuelle.mutuelle;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -58,7 +59,12 @@ public class OverViewActivity extends AppCompatActivity
         reports.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fragment = new Reports();
+                //fragment = new Reports();
+                Reports reportsFragment = new Reports();
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction transaction = fragmentManager.beginTransaction();
+                transaction.add(R.id.reportsListView, reportsFragment);
+                transaction.commit();
             }
         });
 
