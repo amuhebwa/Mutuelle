@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.cmu.mutuelle.mutuelle">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <provider
         android:name=".util.MutuelleContentProvider"
         android:authorities="edu.cmu.mutuelle.mutuelle.util.MutuelleContentProvider">
@@ -46,7 +50,10 @@
             android:name=".PaymentActivity"
             android:label="@string/subscription_payment"
             android:screenOrientation="portrait" />
-        <activity android:name=".PaymentDetails"></activity>
+        <activity android:name=".PaymentDetails" />
+        <activity
+            android:name=".CameraActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
