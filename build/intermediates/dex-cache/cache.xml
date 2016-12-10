@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/rommy/Dropbox/cmu/mituelle-project/Mutuelle/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="cccd11ae4e98011f71908389d2eebf9ef400e2e6">
+        <dex dex="/home/rommy/Dropbox/cmu/mituelle-project/Mutuelle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e5db7696735b308f24bf9dd7eb53a7a7ee08357d/classes.dex" />
+    </item>
+
+</items>
