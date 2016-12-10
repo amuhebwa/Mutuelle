@@ -5,9 +5,9 @@ package edu.cmu.mutuelle.mutuelle.models;
  */
 
 public class Treatment {
-    private int treatmentId;
-    private int checkinId;
-    private int serviceId;
+    private long treatmentKey;
+    private long checkinId;
+    private String serviceId;
     private String timeStamp;
     private String audioPath;
 
@@ -15,24 +15,23 @@ public class Treatment {
 
     }
 
-    public void setTreatmentId(int treatmentId){
-        this.treatmentId = treatmentId;
+    public void setTreatmentKey(long treatmentKey){
+        this.treatmentKey = treatmentKey;
     }
-    public int getTreatmentId(){
-        return this.treatmentId;
+    public long getTreatmentKey(){
+        return this.treatmentKey;
     }
-
-    public void setCheckinId(int checkinId){
+    public void setCheckinId(long checkinId){
         this.checkinId = checkinId;
     }
-    public int getCheckinId(){
+    public long getCheckinId(){
         return this.checkinId;
     }
 
-    public void setServiceId(int serviceId){
-        this.treatmentId = serviceId;
+    public void setServiceId(String serviceId){
+        this.serviceId = serviceId;
     }
-    public int getServiceId(){
+    public String getServiceId(){
         return this.serviceId;
     }
 
@@ -52,7 +51,6 @@ public class Treatment {
 
     public String toString(){
         StringBuilder s = new StringBuilder();
-        s.append("Treatment ID: "+getTreatmentId());
         s.append("Checkin ID: "+getCheckinId());
         s.append("Service ID: "+getServiceId());
         s.append("Timestamp: "+getTimeStamp());
