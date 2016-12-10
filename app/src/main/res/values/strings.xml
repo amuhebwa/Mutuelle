@@ -56,4 +56,12 @@
     <string name="reports_overview">Reports</string>
     <string name="checkin">CHECKIN</string>
     <string name="checkin_label">Checkin</string>
+    <string name="current_plan">
+        Individual Plan
+        Valid From: June 2016
+        Valid Unit: June 2017
+    </string>
+    <string name="myPlanActivityLabel">My Plan</string>
+    <string name="payments_report">Payments Report</string>
+    <string name="myPaymentsActivityLabel">Payments Report</string>
 </resources>
