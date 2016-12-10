@@ -6,13 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-<<<<<<< HEAD
 import android.widget.EditText;
-
-public class LoginActivity extends AppCompatActivity {
-    private EditText usernameTxt, passwordTxt;
-=======
-import android.widget.Toast;
 
 import java.io.File;
 
@@ -22,20 +16,18 @@ import edu.cmu.mutuelle.mutuelle.models.PlanDataObj;
 import edu.cmu.mutuelle.mutuelle.models.ServiceDataObj;
 
 public class LoginActivity extends AppCompatActivity {
+    private EditText usernameTxt, passwordTxt;
     DBHelper dbHelper;
     HospitalDataObj hospital;
     ServiceDataObj service;
     PlanDataObj plan;
 
->>>>>>> 90b3904798dcb9a8253b8cb5c355f997bcc39e10
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
-<<<<<<< HEAD
         usernameTxt = (EditText) findViewById(R.id.username);
         passwordTxt = (EditText) findViewById(R.id.password);
-=======
 
         //Check if database exists. If not, create one.
         File database = getApplicationContext().getDatabasePath("mutuelle.db");
@@ -68,7 +60,6 @@ public class LoginActivity extends AppCompatActivity {
             addPlans();
         }
 
->>>>>>> 90b3904798dcb9a8253b8cb5c355f997bcc39e10
 
         Button signUpButton = (Button) findViewById(R.id.signupButton);
         Button loginButton = (Button) findViewById(R.id.loginButton);
@@ -85,16 +76,14 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-<<<<<<< HEAD
     // validate user details
-    private void validateUserDetails(){
+    private void validateUserDetails() {
         String username = usernameTxt.getText().toString();
         String password = passwordTxt.getText().toString();
 
         // check if user exists in the database. if true, login, else show a toast message
         startActivity(new Intent(LoginActivity.this, OverViewActivity.class));
-=======
-
+    }
     //Add hospitals to DB
     public void addHospitals(){
         hospital.createHospital("KAC001", "Kacyiru District Hospital", 1111, -1.9336289, 30.073016);
@@ -156,6 +145,5 @@ public class LoginActivity extends AppCompatActivity {
         service.createService("DRKMED01", "LAC001", "Medication 1", 4500.00);
         service.createService("DRKMED02", "LAC001", "Medication 2", 5000.00);
         service.createService("DRKMED03", "LAC001", "Medication 3", 8000.00);
->>>>>>> 90b3904798dcb9a8253b8cb5c355f997bcc39e10
     }
 }

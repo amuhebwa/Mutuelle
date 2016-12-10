@@ -9,11 +9,10 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 
 public class SignUpActivity extends AppCompatActivity {
-<<<<<<< HEAD
+
     private EditText firstNameTxt, lastNameTxt, passwordTxt, nationalIDTxt;
-=======
+
     private EditText firstName, lastName, password, nationalID, dateOfBirth;
->>>>>>> 90b3904798dcb9a8253b8cb5c355f997bcc39e10
     private ImageButton takePicture;
     private Button signupButton;
 
@@ -21,18 +20,15 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup_activity);
-<<<<<<< HEAD
         firstNameTxt = (EditText) findViewById(R.id.firstname);
         lastNameTxt = (EditText) findViewById(R.id.lastname);
         passwordTxt = (EditText) findViewById(R.id.password);
         nationalIDTxt = (EditText) findViewById(R.id.nationalId);
-=======
         firstName = (EditText) findViewById(R.id.firstname);
         lastName = (EditText) findViewById(R.id.lastname);
         dateOfBirth = (EditText) findViewById(R.id.dateOfBirth);
         password = (EditText) findViewById(R.id.password);
         nationalID = (EditText) findViewById(R.id.nationalId);
->>>>>>> 90b3904798dcb9a8253b8cb5c355f997bcc39e10
         takePicture = (ImageButton) findViewById(R.id.takePicture);
         signupButton = (Button) findViewById(R.id.signupButton);
 
