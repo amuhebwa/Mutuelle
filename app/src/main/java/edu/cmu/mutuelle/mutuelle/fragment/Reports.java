@@ -18,7 +18,6 @@ import edu.cmu.mutuelle.mutuelle.models.Report;
 public class Reports extends Fragment
 {
 
-
     public Reports()
     {
 

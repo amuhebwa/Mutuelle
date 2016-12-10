@@ -6,65 +6,75 @@ import java.util.Date;
 
 public class Checkin
 {
-    private long userNationalID;
-    private long secondaryUser;
-    private long hospitalID;
-    private Date checkInTime;
-    private Date checkOutTime;
+    private long checkinKey;
+    private String userNationalID;
+    private String secondaryUser;
+    private String hospitalID;
+    private String checkInTime;
+    private String checkOutTime;
 
-    public Checkin(long userNID)
+    public Checkin(){
+
+    }
+    public Checkin(String userNID)
     {
         userNationalID = userNID;
     }
 
-    public Checkin(long userNID, long secUser, long hosID)
+    public Checkin(String userNID, String secUser, String hosID)
     {
         userNationalID = userNID;
         secondaryUser = secUser;
         hospitalID = hosID;
     }
 
-    public long getUserNationalID() {
+    public void setCheckinKey(Long key){
+        this.checkinKey = key;
+    }
+    public long getCheckinKey(){
+        return this.checkinKey;
+    }
+    public String getUserNationalID() {
         return userNationalID;
     }
 
-    public void setUserNationalID(long userNID) {
+    public void setUserNationalID(String userNID) {
         userNationalID = userNID;
     }
 
-    public long getSecondaryUser() {
+    public String getSecondaryUser() {
         return secondaryUser;
     }
 
-    public void setSecondaryUser (long secUser) {
+    public void setSecondaryUser (String secUser) {
         secondaryUser = secUser;
     }
 
-    public Date getCheckInTime() {
+    public String getCheckInTime() {
         return checkInTime;
     }
 
-    public void setCheckInTime(Date checkin) {
+    public void setCheckInTime(String checkin) {
         checkInTime = checkin;
     }
 
-    public Date getCheckOutTime() {
+    public String getCheckOutTime() {
         return checkOutTime;
     }
 
-    public void setCheckOutTime(Date checkout) {
+    public void setCheckOutTime(String checkout) {
         checkOutTime = checkout;
     }
 
-    public long getHospitalId() {
+    public String getHospitalId() {
         return hospitalID;
     }
 
-    public void setHospitalId (long hosID) {
+    public void setHospitalId (String hosID) {
         hospitalID = hosID;
     }
 
-    public Image generateQrCode (long userNationalID) {
+    public Image generateQrCode (String userNationalID) {
         Image image = null;
         return image;
     }
