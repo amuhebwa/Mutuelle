@@ -3,16 +3,29 @@ package edu.cmu.mutuelle.mutuelle.models;
 
 public class Service
 {
-    private long serviceId;
-    private long hospitalId;
+    private String serviceId;
+    private String hospitalId;
     private String description;
     private double cost;
+    private long serviceKey;
 
-    public long getHospitalId() {
+    public void setServiceKey(Long serviceKey){
+        this.serviceKey = serviceKey;
+    }
+    public Long getServiceKey(){
+        return this.serviceKey;
+    }
+    public void setServiceId(String serviceId){
+        this.serviceId = serviceId;
+    }
+    public String getServiceId(){
+        return this.serviceId;
+    }
+    public String getHospitalId() {
         return hospitalId;
     }
 
-    public void setHospitalId(long hosID) {
+    public void setHospitalId(String hosID) {
         hospitalId = hosID;
     }
 
