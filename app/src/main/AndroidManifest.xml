@@ -45,7 +45,9 @@
             android:label="@string/subscription_payment"
             android:screenOrientation="portrait" />
         <activity android:name=".PaymentDetails" />
-        <activity android:name=".CheckInActivity" />
+        <activity
+            android:name=".CheckInActivity"
+            android:label="@string/checkin_label"/>
         <activity
             android:name=".AddDependentActivity"
             android:label="@string/add_dependent_label"></activity>
