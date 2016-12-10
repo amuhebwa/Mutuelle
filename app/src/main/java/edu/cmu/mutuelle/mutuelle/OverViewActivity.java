@@ -45,14 +45,14 @@ public class OverViewActivity extends AppCompatActivity
         myPlan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(OverViewActivity.this, MyPlanActivity.class));
             }
         });
 
         payment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(OverViewActivity.this, MyPaymentsActivity.class));
             }
         });
 
@@ -132,6 +132,7 @@ public class OverViewActivity extends AppCompatActivity
                 break;
             case  R.id.nav_payment:
                 //fragment = new Payment();
+                startActivity(new Intent(OverViewActivity.this, MyPaymentsActivity.class));
                 break;
             case R.id.nav_nearbyHospital:
                 //fragment = new NearbyHospital();
