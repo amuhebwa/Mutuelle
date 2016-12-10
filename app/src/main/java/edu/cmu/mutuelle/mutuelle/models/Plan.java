@@ -5,19 +5,26 @@ package edu.cmu.mutuelle.mutuelle.models;
  */
 
 public class Plan {
-    private int planId;
+    private String planId;
     private String planName;
     private double planCost;
     private String description;
+    private long planKey;
 
     public Plan(){
 
     }
 
-    public void setPlanId(int planId){
+    public void setPlanKey(Long planKey){
+        this.planKey = planKey;
+    }
+    public Long getPlanKey(){
+        return this.planKey;
+    }
+    public void setPlanId(String planId){
         this.planId = planId;
     }
-    public int getPlanId(){
+    public String getPlanId(){
         return this.planId;
     }
 
