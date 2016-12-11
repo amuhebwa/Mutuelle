@@ -2,6 +2,7 @@ package edu.cmu.mutuelle.mutuelle.hospital;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -25,27 +26,34 @@ public class HospitalCheckinPatientActivity extends AppCompatActivity implements
         scanButton = (Button) findViewById(R.id.scannerButton);
         scanResultView = (TextView) findViewById(R.id.scanResultView);
 
-        mScannerView = new ZXingScannerView(this);
-        mScannerView.setResultHandler(this);
+
 
         //Start scanning
         scanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mScannerView = new ZXingScannerView(HospitalCheckinPatientActivity.this);
                 setContentView(mScannerView);
+                mScannerView.setResultHandler(HospitalCheckinPatientActivity.this);
                 mScannerView.startCamera();
             }
         });
     }
+
     @Override
     protected void onPause() {
         super.onPause();
-        mScannerView.stopCamera();
+       mScannerView.stopCamera();
     }
 
     @Override
     public void handleResult(Result result) {
+        Log.d("qrcode","Result available");
+        Log.d("qrcode","camera stopped");
         scanResultView.setText(result.getText());
+        Log.d("qrcode","text set");
     }
+
+    
 }
 
