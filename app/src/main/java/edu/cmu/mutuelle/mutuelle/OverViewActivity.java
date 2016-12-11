@@ -3,7 +3,6 @@ package edu.cmu.mutuelle.mutuelle;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,8 +15,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-
-import edu.cmu.mutuelle.mutuelle.fragment.Reports;
 
 public class OverViewActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -127,7 +124,7 @@ public class OverViewActivity extends AppCompatActivity
                 startActivity(new Intent(OverViewActivity.this, MyPaymentsActivity.class));
                 break;
             case R.id.nav_nearbyHospital:
-                startActivity(new Intent(this, NearbyActivity.class));
+                startActivity(new Intent(this, NearbyHospitalActivity.class));
                 break;
             case R.id.nav_add_dependent:
                 startActivity(new Intent(this, AddDependentActivity.class));
