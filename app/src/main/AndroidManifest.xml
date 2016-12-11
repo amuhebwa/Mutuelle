@@ -43,7 +43,7 @@
             android:parentActivityName=".LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".NearbyActivity"
+            android:name=".NearbyHospitalActivity"
             android:label="@string/nearby_activity_label"
             android:parentActivityName=".OverViewActivity"
             android:screenOrientation="portrait" />
