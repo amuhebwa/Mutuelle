@@ -75,7 +75,6 @@
             android:parentActivityName=".OverViewActivity" />
         <activity
             android:name=".MyPaymentsActivity"
-<<<<<<< HEAD
             android:label="@string/myPaymentsActivityLabel"
             android:parentActivityName=".OverViewActivity" />
 
@@ -91,10 +90,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-=======
-            android:label="@string/myPaymentsActivityLabel" />
         <activity android:name=".CustomerImageViewActivity"></activity>
->>>>>>> romalicecopy
     </application>
 
 </manifest>
