@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="96f9ad82972cd40331417ac4972bd4d94787d48d">
+        sha1="eafdd1d22854f773c128448c6afa681b9df68072">
         <dex dex="/home/rommy/Dropbox/cmu/mituelle-project/Mutuelle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e5db7696735b308f24bf9dd7eb53a7a7ee08357d/classes.dex" />
     </item>
     <item
@@ -126,6 +126,24 @@
         revision="24.0.0"
         sha1="d4ce6303165f20650850673bd5891fbcca80caae">
         <dex dex="/home/rommy/Dropbox/cmu/mituelle-project/Mutuelle/app/build/intermediates/pre-dexed/debug/com.journeyapps-zxing-android-embedded-3.2.0_b88e8900b1b8322cda7f29973eef511c1b4425bf.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rommy/Dropbox/cmu/mituelle-project/Mutuelle/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/zxing/1.8.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="68ef1daf85c69fca8fddf7bbb947fc51cc9f8ca3">
+        <dex dex="/home/rommy/Dropbox/cmu/mituelle-project/Mutuelle/app/build/intermediates/transforms/dex/debug/folders/1000/10/me.dm7.barcodescanner-zxing-1.8.4_88732cbe28d708bbca39c9b5772fd9eef803c4ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rommy/Dropbox/cmu/mituelle-project/Mutuelle/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.8.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="af8d42f1f020e936b8cd9f5cb6c75993194895a3">
+        <dex dex="/home/rommy/Dropbox/cmu/mituelle-project/Mutuelle/app/build/intermediates/transforms/dex/debug/folders/1000/10/me.dm7.barcodescanner-core-1.8.4_a1f77f232ef81b27446b4e402edf1d5e2c16e8db/classes.dex" />
     </item>
     <item
         is-multidex="false"
