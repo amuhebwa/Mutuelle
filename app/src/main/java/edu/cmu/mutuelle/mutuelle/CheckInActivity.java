@@ -1,6 +1,7 @@
 package edu.cmu.mutuelle.mutuelle;
 
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +22,7 @@ import edu.cmu.mutuelle.mutuelle.fragment.ViewCustomerImageFragment;
 public class CheckInActivity extends AppCompatActivity {
 
     ImageView QRCodeImage;
-    ImageButton viewCustomerImage;
+    ImageButton viewCustomerImageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,20 +30,16 @@ public class CheckInActivity extends AppCompatActivity {
         setContentView(R.layout.activity_check_in);
 
         QRCodeImage = (ImageView) findViewById(R.id.QRCodeImage);
-        viewCustomerImage = (ImageButton) findViewById(R.id.customerImageView);
+        viewCustomerImageButton = (ImageButton) findViewById(R.id.customerImageViewButton);
 
-        /*
-        viewCustomerImage.setOnClickListener(new View.OnClickListener() {
+
+        viewCustomerImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ViewCustomerImageFragment customerImageFragment = new ViewCustomerImageFragment();
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction transaction = fragmentManager.beginTransaction();
-                transaction.add(R.id.ImageFragmentContainer, customerImageFragment);
-                transaction.commit();
+                startActivity(new Intent(CheckInActivity.this, CustomerImageViewActivity.class));
             }
         });
-        */
+
 
         MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
         String textToEncode = "Text to convert";
