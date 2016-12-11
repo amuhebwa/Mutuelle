@@ -65,4 +65,7 @@
     <string name="payments_report">Payments Report</string>
     <string name="myPaymentsActivityLabel">Payments Report</string>
     <string name="google_maps_key" translatable="false">AIzaSyC2XkjYwg-QD6KYshvyfB66a3kwrAEr1BQ</string>
+    <string name="hospital_checkin_patient">Hospital | Checkin patient</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="scan_results_hint">Scan results appear here</string>
 </resources>

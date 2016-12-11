@@ -77,7 +77,6 @@
             android:name=".MyPaymentsActivity"
             android:label="@string/myPaymentsActivityLabel"
             android:parentActivityName=".OverViewActivity" />
-
         <activity
             android:name=".ReportsActivity"
             android:label="Report"
@@ -86,11 +85,13 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-        <activity android:name=".CustomerImageViewActivity"></activity>
+
+        <activity android:name=".CustomerImageViewActivity" />
+        <activity android:name=".hospital.HospitalCheckinPatientActivity"
+            android:label="@string/hospital_checkin_patient"></activity>
     </application>
 
 </manifest>

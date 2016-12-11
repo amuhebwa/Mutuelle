@@ -16,6 +16,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import edu.cmu.mutuelle.mutuelle.hospital.HospitalCheckinPatientActivity;
+
 public class OverViewActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -131,6 +133,9 @@ public class OverViewActivity extends AppCompatActivity
                 break;
             case R.id.nav_reports:
                 startActivity(new Intent(this, ReportsActivity.class));
+                break;
+            case R.id.nav_hospital:
+                startActivity(new Intent(OverViewActivity.this, HospitalCheckinPatientActivity.class));
                 break;
         }
         if (fragment != null)

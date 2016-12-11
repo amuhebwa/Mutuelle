@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hospital_checkin_patient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.cmu.mutuelle.mutuelle.hospital.HospitalCheckinPatientActivity">
+
+    <Button
+        android:text="@string/scan_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#77DD77"
+        android:textColor="#FFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp"
+        android:id="@+id/scannerButton" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/abstractView"
+        android:background="#777777"
+        android:layout_below="@id/scannerButton"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:text=""
+        android:hint="@string/scan_results_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/abstractView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp"
+        android:background="#EFEFEF"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:id="@+id/scanResultView" />
+</RelativeLayout>
