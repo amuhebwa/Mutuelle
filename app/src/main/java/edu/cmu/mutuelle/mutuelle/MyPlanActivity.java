@@ -14,5 +14,17 @@ public class MyPlanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my_plan);
 
         currentPlanViewHolder = (TextView) findViewById(R.id.currentPlanViewHolder);
+
+        //Display the current plan
+        currentPlanViewHolder.setText(getCurrentPlan());
+    }
+    private StringBuilder getCurrentPlan() {
+        String plan = "Individual Plan";
+        String validUntil = "December 2017";
+
+        StringBuilder string = new StringBuilder();
+        string.append("Your current plan is: "+plan);
+        string.append("\nValid until: "+validUntil);
+        return string;
     }
 }
