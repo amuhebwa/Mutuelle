@@ -59,12 +59,7 @@ public class OverViewActivity extends AppCompatActivity
         reports.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //fragment = new Reports();
-                Reports reportsFragment = new Reports();
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                FragmentTransaction transaction = fragmentManager.beginTransaction();
-                transaction.add(R.id.reportsListView, reportsFragment);
-                transaction.commit();
+                startActivity(new Intent(OverViewActivity.this, ReportsActivity.class));
             }
         });
 
@@ -126,24 +121,19 @@ public class OverViewActivity extends AppCompatActivity
         switch (itemId)
         {
             case R.id.nav_subscription:
-                // fragment = new Subscription();
-                // start a new  activity
                 startActivity(new Intent(this, NewSubscriptionActivity.class));
                 break;
             case  R.id.nav_payment:
-                //fragment = new Payment();
                 startActivity(new Intent(OverViewActivity.this, MyPaymentsActivity.class));
                 break;
             case R.id.nav_nearbyHospital:
-                //fragment = new NearbyHospital();
-                // start a new  activity
                 startActivity(new Intent(this, NearbyActivity.class));
                 break;
             case R.id.nav_add_dependent:
                 startActivity(new Intent(this, AddDependentActivity.class));
                 break;
             case R.id.nav_reports:
-                fragment = new Reports();
+                startActivity(new Intent(this, ReportsActivity.class));
                 break;
         }
         if (fragment != null)

@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import edu.cmu.mutuelle.mutuelle.models.UserDataObj;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -47,14 +50,36 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void saveUserDetails() {
-        String firstname = firstNameTxt.getText().toString();
-        String lastname = lastNameTxt.getText().toString();
-        String password = passwordTxt.getText().toString();
-        String nationalId = nationalIDTxt.getText().toString();
+        String firstname = firstNameTxt.getText().toString().trim();
+        String lastname = lastNameTxt.getText().toString().trim();
+        String password = passwordTxt.getText().toString().trim();
+        String nationalId = nationalIDTxt.getText().toString().trim();
+        String date_of_birth = dateOfBirth.getText().toString().trim();
+        String imagePath = getStringPath();
+        if (imagePath == null) {
+            Toast.makeText(getApplicationContext(), "Please Take a picture of your Mutuelle Card", Toast.LENGTH_SHORT).show();
+
+        } else {
+            UserDataObj user = new UserDataObj(this);
+            if (!firstname.isEmpty() || !lastname.isEmpty() || !password.isEmpty() || !date_of_birth.isEmpty() || !nationalId.isEmpty()) {
+                user.createUser(firstname, lastname, Integer.parseInt(nationalId), date_of_birth, imagePath, password);
+                if (user != null) {
+                    startActivity(new Intent(SignUpActivity.this, OverViewActivity.class));
+                } else {
+                    Toast.makeText(getApplicationContext(), "Mutuelle Account Created", Toast.LENGTH_SHORT).show();
+                }
+            }
+        }
 
     }
 
-    private void takePicture(){
+    public String getStringPath() {
+        String imagePath = null;
+        imagePath = getIntent().getStringExtra("ImagePath");
+        return imagePath;
+    }
+
+    private void takePicture() {
         startActivity(new Intent(SignUpActivity.this, CameraActivity.class));
     }
 }

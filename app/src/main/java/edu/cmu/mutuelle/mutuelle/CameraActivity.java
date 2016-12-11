@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -24,7 +25,8 @@ public class CameraActivity extends AppCompatActivity {
     private ImageView imagePreview;
     private static final int CAMERA_REQUEST = 100;
     private Uri file;
-    private Button startCamera;
+    private Button startCamera, savePicturePath;
+    private String imagePath = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class CameraActivity extends AppCompatActivity {
         setContentView(R.layout.camera_activity);
         imagePreview = (ImageView) findViewById(R.id.imagePreview);
         startCamera = (Button) findViewById(R.id.startCamera);
+        savePicturePath = (Button) findViewById(R.id.savePicturePath);
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             startCamera.setEnabled(false);
@@ -41,6 +44,18 @@ public class CameraActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 takePicture();
+            }
+        });
+        savePicturePath.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (imagePath != null){
+                    Intent intent = new Intent(CameraActivity.this, SignUpActivity.class);
+                    intent.putExtra("ImagePath", imagePath);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(getApplicationContext(), "Please Take Picture of your Mutuelle Card", Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
@@ -58,6 +73,7 @@ public class CameraActivity extends AppCompatActivity {
     public void takePicture() {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         file = Uri.fromFile(getOutputMediaFile());
+        imagePath = file.getPath();
         intent.putExtra(MediaStore.EXTRA_OUTPUT, file);
         startActivityForResult(intent, CAMERA_REQUEST);
     }
