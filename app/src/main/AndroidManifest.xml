@@ -63,7 +63,8 @@
             android:label="@string/myPlanActivityLabel" />
         <activity
             android:name=".MyPaymentsActivity"
-            android:label="@string/myPaymentsActivityLabel"></activity>
+            android:label="@string/myPaymentsActivityLabel" />
+        <activity android:name=".CustomerImageViewActivity"></activity>
     </application>
 
 </manifest>

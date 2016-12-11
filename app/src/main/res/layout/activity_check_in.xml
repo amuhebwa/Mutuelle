@@ -78,7 +78,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ic_menu_gallery"
-            android:id="@+id/customerImageView"
+            android:id="@+id/customerImageViewButton"
             android:layout_marginLeft="100dp" />
     </LinearLayout>
 
