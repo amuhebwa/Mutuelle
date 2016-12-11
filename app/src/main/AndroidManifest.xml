@@ -39,10 +39,12 @@
         <activity
             android:name=".NearbyActivity"
             android:label="@string/nearby_activity_label"
+            android:parentActivityName=".OverViewActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".NewSubscriptionActivity"
             android:label="@string/new_subscription_activity_label"
+            android:parentActivityName=".OverViewActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".PaymentActivity"
@@ -51,19 +53,29 @@
         <activity android:name=".PaymentDetails" />
         <activity
             android:name=".CameraActivity"
+            android:parentActivityName=".SignUpActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".CheckInActivity"
-            android:label="@string/checkin_label" />
+            android:label="@string/checkin_label"
+            android:parentActivityName=".OverViewActivity" />
         <activity
             android:name=".AddDependentActivity"
-            android:label="@string/add_dependent_label" />
+            android:label="@string/add_dependent_label"
+            android:parentActivityName=".OverViewActivity" />
         <activity
             android:name=".MyPlanActivity"
-            android:label="@string/myPlanActivityLabel" />
+            android:label="@string/myPlanActivityLabel"
+            android:parentActivityName=".OverViewActivity" />
         <activity
+            android:parentActivityName=".OverViewActivity"
             android:name=".MyPaymentsActivity"
-            android:label="@string/myPaymentsActivityLabel"></activity>
+            android:label="@string/myPaymentsActivityLabel" />
+
+        <activity android:name=".ReportsActivity"
+            android:label="Report"
+            android:parentActivityName=".OverViewActivity"
+            />
     </application>
 
 </manifest>
