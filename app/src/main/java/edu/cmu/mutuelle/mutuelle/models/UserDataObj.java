@@ -115,6 +115,17 @@ public class UserDataObj {
         return password;
     }
 
+
+    //Select user password - takes national D
+    public String getUserPassword(String nationalID){
+        Cursor cursor = db.query(dbHelper.usersTable, allColumns, dbHelper.nationalID + " = ?",
+                new String[] { String.valueOf(nationalID) }, null, null, null);
+        User newUser = cursorToUser(cursor);
+        String password = newUser.getPassword();
+        cursor.close();
+        return password;
+    }
+
     //Get user representation of user database object
     private User cursorToUser(Cursor cursor){
         User user = new User();
