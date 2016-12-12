@@ -111,7 +111,7 @@ public class CheckinDataObj {
     }
 
     //Get Checkin representation of checkin database object
-    private Checkin cursorToCheckin(Cursor cursor){
+    public Checkin cursorToCheckin(Cursor cursor){
         Checkin checkin = new Checkin();
         if (cursor.moveToFirst()) {
             checkin.setCheckinKey(cursor.getLong(0));
